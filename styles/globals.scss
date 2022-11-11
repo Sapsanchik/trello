@@ -1,0 +1,94 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
+
+nav {
+  position: fixed;
+  height: 60px;
+  left: 0;
+  top: 0;
+  right: 0;
+  background: darkblue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+.screen {
+  display: flex;
+}
+
+.board__screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  margin-top: 60px;
+  padding: 1rem;
+}
+
+.leftbar {
+  background: grey;
+  color: black;
+  width: 200px;
+}
+
+.boardBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1600px;
+}
+
+.board {
+  min-width: 400px;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid blue;
+  border-radius: 5px;
+  padding: 20px 10px;
+  margin: 10px;
+}
+
+.board__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.board__item {
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px 0;
+  cursor: grab;
+}
+

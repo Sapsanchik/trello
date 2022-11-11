@@ -6,11 +6,20 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "serve": "concurrently \"npm run dev\" \"npm run mock\"",
+    "mock": "json-server -w db.json -p 4200 -d 1750"
   },
   "dependencies": {
+    "lorem-ipsum": "^2.0.8",
     "next": "13.0.2",
+    "nextjs-progressbar": "^0.0.16",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-lorem-ipsum": "^1.4.10"
+  },
+  "devDependencies": {
+    "concurrently": "^7.5.0",
+    "sass": "^1.56.1"
   }
 }
